@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Agregar</title>
+  <script type="module" src="lib/js/submitForm.js"></script>
+  <script type="module" src="lib/js/muestraError.js"></script>
+  <link rel="stylesheet" href="estilos/styles.css">
+</head>
+
+<body>
+
+  <form onsubmit="submitForm('srv/Usuario-agrega.php', event)
+    .then(modelo => location.href = 'index.html')
+    .catch(muestraError)" enctype="multipart/form-data">
+
+    <div>
+      <h1>Agregar</h1>
+    </div>
+
+   
+
+    <div>
+      <p>
+        <label>
+          Nombre *
+          <input name="nombre" required>
+        </label>
+      </p>
+    </div>
+
+    <div>
+      <p>
+        <label>
+          Apellido *
+          <input name="apellido" required>
+        </label>
+      </p>
+    </div>
+
+    <div>
+      <p>
+        <label>
+          Correo electrónico *
+          <input type="email" name="correo" required>
+        </label>
+      </p>
+    </div>
+
+    <div>
+      <p>
+        <label>
+          Contraseña *
+          <input type="password" name="contrasena" required>
+        </label>
+      </p>
+    </div>
+
+    <div>
+      <p>
+        <label>
+          CV (PDF) 
+          <input type="file" name="cv" accept=".pdf">
+        </label>
+      </p>
+    </div>
+
+    <div>
+      <p>
+        <label>
+          Fecha de registro *
+          <input type="date" name="fecha_registro" required>
+        </label>
+      </p>
+    </div>
+
+    <div>
+      <p>* Obligatorio</p>
+    </div>
+
+    <div>
+      <p><button type="submit">Agregar</button></p>
+    </div>
+    <p><a href="index.html">Cancelar</a></p>
+  </form>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f6fa;
+  padding: 40px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Contenedor principal */
+.container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Encabezado */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.btn-agregar {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-agregar:hover {
+  background-color: #3e8e41;
+}
+
+/* Lista de usuarios */
+.usuarios-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Tarjeta individual */
+.usuario-card {
+  border: 1px solid #ddd;
+  padding: 15px 20px;
+  border-radius: 8px;
+  background-color: #fafafa;
+  transition: box-shadow 0.3s ease;
+}
+
+.usuario-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.usuario-card p {
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.usuario-card p strong {
+  color: #000;
+}
+.usuario-card {
+  background: #f0f0f0;
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}

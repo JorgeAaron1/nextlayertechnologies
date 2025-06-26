@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Acceso a base de datos</title>
+
+
+  <script type="module" src="lib/js/consumeJson.js"></script>
+  <script type="module" src="lib/js/muestraObjeto.js"></script>
+  <script type="module" src="lib/js/muestraError.js"></script>
+
+
+  <link rel="stylesheet" href="estilos/estilosInd.css">
+</head>
+
+<body onload="consumeJson('srv/usuarios.php')
+   .then(respuesta => muestraObjeto(document, respuesta.body))
+   .catch(muestraError)">
+
+  <div class="container">
+    <header class="header">
+      <h1>Lista de Usuarios</h1>
+
+     
+
+      <a href="agrega.html" class="btn-agregar">+ Agregar Usuario</a>
+    </header>
+
+    <main id="usuarios" class="usuarios-lista">
+    </main>
+  </div>
+
+</body>
+
+
+
+</html>
